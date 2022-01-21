@@ -1,0 +1,125 @@
+.bg-light{
+    background-color: #c8d2e6 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(151, 144, 247);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(20, 2, 2);
+}
+body {
+    background-color: #f7dada;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.intro {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: black;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2px;
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.areaContainer{
+    display: flex;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    justify-content: center;
+    
+}
+.areaTiles{
+    width: 100%;
+    display: flex;
+  justify-content: space-between;
+  
+}
+.areaTile{
+    background-color: white;
+    max-width: 350px;
+    padding: 3%;
+    height: fit-content;
+    text-align: center;
+    outline: solid grey 1px;
+   text-decoration: none;
+   margin: 5px;
+    
+}
+.weekContainer {
+    width: 100%;
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    justify-content: center;
+}
+.week{
+    width: 100%;
+    display: flex;
+  justify-content: space-between;
+}
+.weekPart{
+    /* outline: solid grey 1px; */
+    width: 50%;
+}
+
+.areaTile img{
+    width: 100%;
+
+}
+.areaTile:hover{
+    background-color: ivory;
+}
+.areaTiles a {
+    text-decoration: none;
+    color: black;
+}
+.masonry { /* Masonry container */
+    column-count: 2;
+    column-gap: .1em;
+    margin: 3px;
+  }
+  
+  .item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+  .item img {
+      width: 100%;
+  }
+  
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .email {
+      background-color: #f7dada;
+      padding: 5px;
+      margin-left: 2%;
+      text-align: left;
+      
+  }
