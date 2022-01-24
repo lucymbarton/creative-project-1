@@ -11,16 +11,11 @@
 }
 body {
     background-color: #f7dada;
-    margin: 0;
-    padding: 0;
+    margin-bottom:50px;
     text-align: center;
 }
 .container{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
+    text-align: center; 
 }
 
 .intro {
@@ -39,8 +34,8 @@ body {
 }
 .areaContainer{
     display: flex;
-    /* margin-left: 10%;
-    margin-right: 10%; */
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: center;
     
 }
@@ -122,6 +117,7 @@ body {
       margin-left: 2%;
       text-align: left;
       
+      
   }
 
   @media only screen and (max-width: 767px) {
@@ -129,4 +125,21 @@ body {
       column-count: 1;
     }
   }
+
+  footer{
+    background-color: #c8d2e6;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
  
+  footer a {
+    padding-top: 3%;
+    margin: 1%;
+    color: black;
+    text-decoration: none;
+    }
