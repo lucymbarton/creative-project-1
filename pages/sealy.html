@@ -46,6 +46,23 @@
     <h2>July 12, 2020 - December 28, 2020</h2>
   </div>
 
+<div class="areaContainer">
+  <div class="areaInfo">
+    <h2 id="cityName"></h2>
+    <p id="population">Population: </p>
+    <p id="elevation">Elevation: </p>
+    <p id="latitude">Latitude: </p>
+    <p id="longitude">Longitude: </p>
+  </div>
+
+  <img src="/images/sealy/SealyMap.png" width="80%">
+</div>
+  
+
+  <br><br>
+
+  <hr>
+
   <h2>Week 18</h2>
   <hr>
   <div class="container">
@@ -148,6 +165,32 @@
 </html>
 
 <script>
+fetch("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/Q980553", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
+		"x-rapidapi-key": "df3283eef9msh34e419b051a58cdp1441e0jsnf7afcdb21fd8"
+	}
+})
+.then(response => {
+	return response.json()
+  
+}).then( data => {
+  console.log(data)
+  data = data.data
+
+  document.getElementById('cityName').innerText = data.city + ', ' + data.region
+  document.getElementById('elevation').innerText += ' ' + data.elevationMeters + ' Meters above sea level'
+  document.getElementById('latitude').innerText += ' ' + data.latitude
+  document.getElementById('longitude').innerText += ' ' + data.longitude
+  document.getElementById('population').innerText += ' ' + data.population
+
+
+})
+.catch(err => {
+	console.error(err);
+});
+
 
 
 </script>

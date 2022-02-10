@@ -170,7 +170,17 @@ body {
 		background-color: #031F3B;
 		color: white;
 	}
-	
+	.areaInfo {
+    background-color: #eee;
+    width: fit-content;
+    min-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+  }
+  .areaInfo p {
+    text-align: left;
+  }
 		
 	
 
