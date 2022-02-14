@@ -47,37 +47,45 @@
 
   <div class="areaContainer">
       <div class="areaTiles">
-          <div class="areaTile"><a href="/pages/mtc.html">
+          <div class="areaTile" id="mtc"><a href="/pages/mtc.html">
             <img src="/images/mtcdropoff.jpg"/>
             <h2>Provo MTC</h2>
+  
           </a></div>
-          <div class="areaTile"><a href="/pages/h8.html">
+          <div class="areaTile" id="h8"><a href="/pages/h8.html">
             <img src="/images/onemonth.jpeg"/>
             <h2>Houston 8</h2>
+        
           </a></div>
-          <div class="areaTile"><a href="/pages/manvel.html">
+          <div class="areaTile" id="manvel"><a href="/pages/manvel.html">
               <img src="/images/hnaCrookston.jpg"/>
               <h2>Manvel</h2>
+            
         </a></div>
-       <div class="areaTile"> <a href="/pages/sealy.html">
+       <div class="areaTile" id="sealy"> <a href="/pages/sealy.html">
           <img src="/images/sealycomps.jpg"/>
           <h2>Sealy</h2>
+          
         </a></div>
-        <div class="areaTile"><a href="/pages/galveston.html">
+        <div class="areaTile" id="galvy"><a href="/pages/galveston.html">
           <img src="/images/galvy.jpg"/>
           <h2>Galveston</h2>
+          
         </a></div>
-        <div class="areaTile"><a href="/pages/galveston.html">
+        <div class="areaTile" id="mocity"><a href="/pages/mocity.html">
           <img src="/images/mocity.jpg"/>
           <h2>Missouri City</h2>
+         
         </a></div>
-        <div class="areaTile"><a href="/pages/galveston.html">
+        <div class="areaTile" id="jcgm"><a href="/pages/jcgm.html">
           <img src="/images/jcgm.jpg"/>
           <h2>Jones Creek/Grand Mission</h2>
+         
         </a></div>
-        <div class="areaTile"><a href="/pages/galveston.html">
+        <div class="areaTile" id="fw"><a href="/pages/friendswood.html">
           <img src="/images/friendswood.jpeg"/>
           <h2>Friendswood</h2>
+         
         </a></div>
       </div>
   </div>
@@ -102,3 +110,88 @@
  
 
 </html>
+
+<script>
+  let mtc = document.getElementById('mtc')
+  let h8 = document.getElementById('h8')
+  let manvel = document.getElementById('manvel')
+  let sealy = document.getElementById('sealy')
+  let galvy = document.getElementById('galvy')
+  let mocity = document.getElementById('mocity')
+  let jcgm = document.getElementById('jcgm')
+  let fw = document.getElementById('fw')
+
+  mtc.addEventListener("mouseenter", changeInfo)
+  h8.addEventListener("mouseenter", changeInfo)
+  manvel.addEventListener("mouseenter", changeInfo)
+  sealy.addEventListener("mouseenter", changeInfo)
+  galvy.addEventListener("mouseenter", changeInfo)
+  mocity.addEventListener("mouseenter", changeInfo)
+  jcgm.addEventListener("mouseenter", changeInfo)
+  fw.addEventListener("mouseenter", changeInfo)
+
+  mtc.addEventListener("mouseleave", clearInfo)
+  h8.addEventListener("mouseleave", clearInfo)
+  manvel.addEventListener("mouseleave", clearInfo)
+  sealy.addEventListener("mouseleave", clearInfo)
+  galvy.addEventListener("mouseleave", clearInfo)
+  mocity.addEventListener("mouseleave", clearInfo)
+  jcgm.addEventListener("mouseleave", clearInfo)
+  fw.addEventListener("mouseleave", clearInfo)
+
+function changeInfo(event){
+ // console.log(event)
+ if(event.srcElement.id === 'mtc'){
+   mtc.innerHTML = '<img src="/images/mtcdropoff.jpg"/><h2>Provo MTC</h2><p> March 11, 2020 - March 28, 2020 </p>'
+ }
+ if(event.srcElement.id === 'h8'){
+   h8.innerHTML = '<img src="/images/onemonth.jpeg"/><h2>Houston 8</h2><p> March 28, 2020 - April 20, 2020 </p>'
+ }
+ if(event.srcElement.id === 'manvel'){
+   manvel.innerHTML = '<img src="/images/hnaCrookston.jpg"/><h2>Manvel</h2><p> April 20, 2020 - July 12, 2020 </p>'
+ }
+ if(event.srcElement.id === 'sealy'){
+   sealy.innerHTML = '<img src="/images/sealycomps.jpg"/><h2>Sealy</h2><p> July 12, 2020 - December 28, 2020 </p>'
+ }
+ if(event.srcElement.id === 'galvy'){
+   galvy.innerHTML = '<img src="/images/galvy.jpg"/><h2>Galveston</h2><p> December 28, 2020 - March 21, 2021 </p>'
+ }
+ if(event.srcElement.id === 'mocity'){
+   mocity.innerHTML = '<img src="/images/mocity.jpg"/><h2>Missouri City</h2><p> March 21, 2021 - April 12, 2021 </p>'
+ }
+ if(event.srcElement.id === 'jcgm'){
+   jcgm.innerHTML = '<img src="/images/jcgm.jpg"/><h2>Jones Creek/Grand Mission</h2><p> April 12, 2021 - July 26, 2021 </p>'
+ }
+ if(event.srcElement.id === 'fw'){
+   fw.innerHTML = '<img src="/images/friendswood.jpeg"/><h2>Friendswood</h2><p> July 26, 2021 - August 16, 2021 </p>'
+ }
+
+}
+function clearInfo(event){
+  if(event.srcElement.id === 'mtc'){
+   mtc.innerHTML = '<img src="/images/mtcdropoff.jpg"/><h2>Provo MTC</h2>' 
+ }
+ if(event.srcElement.id === 'h8'){
+   h8.innerHTML = '<img src="/images/onemonth.jpeg"/><h2>Houston 8</h2>'
+ }
+ if(event.srcElement.id === 'manvel'){
+   manvel.innerHTML = '<img src="/images/hnaCrookston.jpg"/><h2>Manvel</h2>'
+ }
+ if(event.srcElement.id === 'sealy'){
+   sealy.innerHTML = '<img src="/images/sealycomps.jpg"/><h2>Sealy</h2>'
+ }
+ if(event.srcElement.id === 'galvy'){
+   galvy.innerHTML = '<img src="/images/galvy.jpg"/><h2>Galveston</h2>'
+ }
+ if(event.srcElement.id === 'mocity'){
+   mocity.innerHTML = '<img src="/images/mocity.jpg"/><h2>Missouri City</h2>'
+ }
+ if(event.srcElement.id === 'jcgm'){
+   jcgm.innerHTML = '<img src="/images/jcgm.jpg"/><h2>Jones Creek/Grand Mission</h2>'
+ }
+ if(event.srcElement.id === 'fw'){
+   fw.innerHTML = '<img src="/images/friendswood.jpeg"/><h2>Friendswood</h2>'
+ }
+}
+
+</script>
