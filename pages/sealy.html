@@ -154,6 +154,8 @@
     <a href="manvel.html"> Manvel </a>
     <a href="#"> Sealy </a>
     <a href="galveston.html"> Galveston </a>
+    <a href="mocity.html">Missouri City</a>
+    <a href="jcgm.html">Jones Creek/Grand Mission</a>
   </footer>
 
 
@@ -165,6 +167,11 @@
 </html>
 
 <script>
+  var fr = new FileReader()
+let secret = fr.readAsBinaryString('/secrets.txt')
+console.log(secret)
+
+
 fetch("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/Q980553", {
 	"method": "GET",
 	"headers": {
