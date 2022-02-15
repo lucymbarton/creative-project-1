@@ -46,6 +46,7 @@ body {
   justify-content: center;    
   flex-wrap: wrap;
   
+  
 }
 .areaTile{
     background-color: rgb(255, 255, 255);
@@ -56,7 +57,8 @@ body {
     outline: solid grey 1px;
    text-decoration: none;
    margin: 5px;
-    
+  cursor: pointer;
+   transition: transform .1s; /* Animation */
 }
 .weekContainer {
     width: 100%;
@@ -81,7 +83,9 @@ body {
 }
 .areaTile:hover{
     background-color: rgb(255, 240, 247);
+    transform: scale(1.015);
 }
+
 .areaTile a {
     text-decoration: none;
     color: black;
