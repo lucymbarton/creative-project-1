@@ -177,11 +177,6 @@
 </html>
 
 <script>
-  var fr = new FileReader()
-let secret = fr.readAsBinaryString('/secrets.txt')
-console.log(secret)
-
-
 fetch("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/Q980553", {
 	"method": "GET",
 	"headers": {
