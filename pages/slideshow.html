@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>My Mission</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html"><img src="/images/thsmLogo.png" width="80px"/>My Mission</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+      <ul class="navbar-nav" style="margin-left: auto;">
+        <li class="nav-item ">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/aboutMe.html">About Me</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/pages/slideshow.html">Photos</a>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/mtc.html">MTC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/h8.html">Houston 8</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/manvel.html">Manvel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pages/sealy.html">Sealy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/galveston.html">Galveston</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/mocity.html">Missouri City <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/jcgm.html">Jones Creek/Grand Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/friendswood.html">Friendswood</a>
+          </li>
+          
+      </ul>
+    </div>
+  </nav>
+
+  <div style="width: 60%; max-height: 350px; margin-left: auto; margin-right: auto; margin-top: 2%; margin-bottom: 3%;">
+    <img class="mySlides" src="/images/b4MTC.jpg">
+    <img class="mySlides" src="/images/presidentandsisterguthrie.jpg">
+    <img class="mySlides" src="/images/onemonth.jpeg">
+    <img class="mySlides" src="/images/hnaCrookston.jpg">
+    <img class="mySlides" src="/images/manvel/w154.jpg">
+    <img class="mySlides" src="/images/manvel/w173.jpg">
+    <img class="mySlides" src="/images/sealy/week211.jpg">
+    <img class="mySlides" src="/images/sealy/week242.jpg">
+    <img class="mySlides" src="/images/sealy/week291.jpg">
+    <img class="mySlides" src="/images/sealy/week303.jpg">
+    <img class="mySlides" src="/images/sealy/week402.jpg">
+    <img class="mySlides" src="/images/galvy.jpg">
+    <img class="mySlides" src="/images/mocity.jpg">
+    <img class="mySlides" src="/images/jcgm.jpg">
+  </div>
+
+    
+
+
+
+
+
+  <footer>
+    <a style="margin-right: auto;" href="https://github.com/lucymbarton/creative-project-1">Github</a>
+    <a href="/index.html">Home </a>
+    <a href="/pages/mtc.html"> MTC </a>
+    <a href="/pages/h8.html"> Houston 8 </a>
+    <a href="/pages/manvel.html"> Manvel </a>
+    <a href="/pages/sealy.html"> Sealy </a>
+    <a href="/pages/galveston.html"> Galveston </a>
+    <a href="/pages/mocity.html">Missouri City</a>
+    <a href="/pages/jcgm.html">Jones Creek/Grand Mission</a>
+    <a href="/pages/friendswood.html">Friendswood</a>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
+</html>
+<script>
+var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>
+
+<style>
+    .mySlides {
+        width: 100%;
+    }
+  
+</style>

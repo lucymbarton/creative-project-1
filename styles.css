@@ -56,6 +56,7 @@ body {
     text-align: center;
     outline: solid grey 1px;
    text-decoration: none;
+   color: black;
    margin: 5px;
   cursor: pointer;
    transition: transform .1s; /* Animation */
@@ -84,6 +85,8 @@ body {
 .areaTile:hover{
     background-color: rgb(255, 240, 247);
     transform: scale(1.015);
+    text-decoration: none;
+    color: black;
 }
 
 .areaTile a {
