@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+<div class="intro">
+  <h1>Hermana Barton</h1>
+  <h2>{{ areas[areaKey].name }}</h2>
+  <h2>{{ areas[areaKey].dateRange }}</h2>
+</div>
+
+<div class="areaContainer">
+  <div class="areaInfo" id="areaInfo" data-geo-id="{{ areas[areaKey].geoCityId }}">
+    <p class="areaInfo-loading" id="areaInfoLoading">Loading area info…</p>
+    <h2 id="cityName"></h2>
+    <p id="population">Population: </p>
+    <p id="elevation">Elevation: </p>
+    <p id="latitude">Latitude: </p>
+    <p id="longitude">Longitude: </p>
+  </div>
+  <img class="area-map" src="{{ areas[areaKey].mapImage }}" alt="Map of {{ areas[areaKey].name }}">
+</div>
+
+<br><br>
+<hr>
+
+{{ content | safe }}
+
+{% include "pagination.njk" %}

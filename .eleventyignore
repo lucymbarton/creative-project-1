@@ -1,0 +1,24 @@
+# Don't publish README or improvement notes as pages
+README.md
+IMPROVEMENTS.md
+
+# Original HTML files replaced by 11ty templates
+index.html
+pages/aboutMe.html
+pages/slideshow.html
+pages/mtc.html
+pages/h8.html
+pages/manvel.html
+pages/sealy.html
+pages/galveston.html
+pages/mocity.html
+pages/jcgm.html
+pages/friendswood.html
+pages/mtcWeeks/*.html
+pages/h8Weeks/*.html
+pages/manvelWeeks/*.html
+pages/sealyWeeks/*.html
+pages/galvestonWeeks/*.html
+pages/mocityWeeks/*.html
+pages/jcgmWeeks/*.html
+pages/friendswoodWeeks/*.html

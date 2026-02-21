@@ -1,0 +1,13 @@
+{
+  "name": "creative-project-1",
+  "version": "1.0.0",
+  "description": "A website to display my mission in South Houston",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "convert-weeks": "node scripts/convert-week-pages.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

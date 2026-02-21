@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/index.html"><img src="/images/thsmLogo.png" width="80px"/>My Mission</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      {% for item in site.navItems %}
+      <li class="nav-item{% if activePage == item.key %} active{% endif %}">
+        <a class="nav-link" href="{{ item.url }}">{{ item.label }}{% if activePage == item.key %} <span class="sr-only">(current)</span>{% endif %}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
