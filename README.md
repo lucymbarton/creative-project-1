@@ -10,4 +10,4 @@ This site is built with [Eleventy (11ty)](https://www.11ty.dev/).
 - **Build:** `npm run build` (output goes to `_site/`)
 - **Develop:** `npm run start` (builds and serves with live reload at http://localhost:8080)
 
-Deploy the contents of the `_site/` folder to any static host (e.g. GitHub Pages, Netlify).
+Deployed at https://lucysmission.netlify.app/
